@@ -1,0 +1,65 @@
+.main-menu{
+    height: 7rem;
+    position: absolute;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: rgba($color-white, .6);
+    color: $color-white;
+
+    &__logo-container{
+        width: 17rem;
+        height: 9rem;
+        background-color: rgba($color-white, 0.6);
+        border-bottom-left-radius: $bubble-size * 2.2;
+        border-bottom-right-radius: $bubble-size * 2.2;
+        position: absolute;
+        top: 7rem;
+        left:5rem;
+    }
+
+    &__menu-logo{
+        @include centreelements;
+        height: 5rem;
+        margin-top: -1rem;
+    }
+
+
+    &__logo--hidden{
+        visibility: hidden;
+        display: none;
+        height: 5rem;
+        margin-top: -2rem;
+    }
+
+    .menu{
+        float: right;
+        margin-right: 4rem;
+        margin-top: 1rem;
+    }
+
+    .menu ul{
+        list-style: none;
+        display: flex;
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+
+    .menu ul ul{
+        display: none;
+    }
+
+    .menu a{
+        display: block;
+        padding: 1.5rem;
+        color: $color-white;
+        text-decoration: none;
+        &:not(:last-child){
+            border-right: 1px solid $color-grey-dark-2;
+        }
+        border-left: 1px solid $color-grey-dark-2;
+        border-bottom: 2px solid $color-grey-dark-2;
+
+    }
+
+}
