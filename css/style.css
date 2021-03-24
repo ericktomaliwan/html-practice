@@ -1,3 +1,23 @@
+/*
+Small mobile Device 0 - 500px
+Mobile Device 0 - 600px
+Tablet 600 - 900
+Tablet landscape - 900 - 1200px
+Desktop - 1200 x 1800px
+Large display 1800+
+
+$screenSize
+smallPhone5
+phone6
+tabletPort7
+tabletPort8
+tabletPort9
+tabletLand1
+tabletLand2
+tabletLand3
+desktop 1800+
+lgdesktop
+*/
 * {
   margin: 0;
   padding: 0;
@@ -95,7 +115,7 @@ body {
   .main-menu .menu {
     float: right;
     margin-right: 4rem;
-    margin-top: 1rem; }
+    margin-top: 0rem; }
   .main-menu .menu ul {
     list-style: none;
     display: flex;
@@ -112,6 +132,24 @@ body {
     border-bottom: 2px solid #999; }
     .main-menu .menu a:not(:last-child) {
       border-right: 1px solid #999; }
+  .main-menu .menu a:hover, .main-menu .menu a:active {
+    color: #eb1f27;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid #eb1f27; }
+  .main-menu .active-menu {
+    color: #fff;
+    background-color: rgba(235, 31, 39, 0.6); }
+  .main-menu .menu ul li:hover ul {
+    display: block;
+    margin-top: 0rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 1.8rem; }
+  .main-menu .hidden {
+    display: none; }
+  .main-menu .bars, .main-menu .times {
+    display: none; }
 
 .header {
   width: 100%;

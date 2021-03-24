@@ -35,7 +35,7 @@
     .menu{
         float: right;
         margin-right: 4rem;
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
 
     .menu ul{
@@ -62,4 +62,35 @@
 
     }
 
-}
+    .menu a:hover, .menu a:active{
+        color: $color-crimson-red;
+        font-weight: 400;
+        background-color: rgba($color-white, .6);
+        border-bottom: 2px solid $color-crimson-red;
+    }
+
+    .active-menu{
+        color: $color-white;
+        background-color: rgba($color-crimson-red, .6);
+    }
+
+    .menu ul li:hover ul{
+        display:block;
+        margin-top: 0rem;
+        width: 100%;
+        background-color: rgba($color-white, .6);
+        font-size: 1.8rem;
+
+    }
+
+    .hidden {
+        display: none;
+        //visibility: hidden;
+        //opacity: 0;
+    }
+
+    .bars, .times{
+        display:none;
+    }
+
+}// end of main menu .scss
