@@ -25,6 +25,15 @@ lgdesktop
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -108,10 +117,9 @@ body {
     height: 5rem;
     margin-top: -1rem; }
   .main-menu__logo--hidden {
-    visibility: hidden;
     display: none;
     height: 5rem;
-    margin-top: -2rem; }
+    margin-top: 1rem; }
   .main-menu .menu {
     float: right;
     margin-right: 4rem;
@@ -150,6 +158,44 @@ body {
     display: none; }
   .main-menu .bars, .main-menu .times {
     display: none; }
+  @media (max-width: 43.75em) {
+    .main-menu {
+      background-color: rgba(255, 255, 255, 0.9); }
+      .main-menu__logo-container {
+        display: none; }
+      .main-menu__logo--hidden {
+        display: block; }
+      .main-menu .bars {
+        display: block;
+        margin-top: -5rem; }
+      .main-menu .icon-menu {
+        float: right;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        font-size: 3.5rem;
+        cursor: pointer;
+        color: #000; }
+        .main-menu .icon-menu:hover {
+          text-shadow: 0 1rem 2rem rgba(235, 31, 39, 0.8); }
+      .main-menu .menu {
+        position: absolute;
+        top: 5rem;
+        width: 100%;
+        left: 0;
+        background-color: #ccc;
+        transform: translateX(-100%);
+        transform: all .5s ease-out; }
+      .main-menu .menu ul {
+        display: block; }
+      .main-menu .menu ul li:hover ul {
+        display: none; }
+      .main-menu #btn-menu:checked ~ .menu {
+        transform: translateX(0%); }
+      .main-menu #btn-menu:checked ~ .icon-menu .bars {
+        display: none; }
+      .main-menu #btn-menu:checked ~ .icon-menu .times {
+        display: block;
+        margin-top: -5rem; } }
 
 .header {
   width: 100%;

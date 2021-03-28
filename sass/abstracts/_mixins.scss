@@ -73,6 +73,12 @@ lgdesktop
         };
     }
 
+    @if $screenSize == tabletLand12{
+        @media (max-width: 75em){
+            @content
+        };
+    }
+
     @if $screenSize == tabletLand13{
         @media (max-width: 81.25em){
             @content

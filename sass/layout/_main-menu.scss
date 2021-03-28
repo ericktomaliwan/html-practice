@@ -26,10 +26,9 @@
 
 
     &__logo--hidden{
-        visibility: hidden;
         display: none;
         height: 5rem;
-        margin-top: -2rem;
+        margin-top: 1rem;
     }
 
     .menu{
@@ -91,6 +90,65 @@
 
     .bars, .times{
         display:none;
+    }
+
+    @include mediaQuery (tabletPort7){
+        &__logo-container{
+            display: none;
+        }
+
+        &__logo--hidden{
+            display: block;
+        }
+
+        background-color: rgba($color-white, .9);
+        .bars {
+            display: block;
+            margin-top: -5rem;
+        }
+        .icon-menu{
+            float:right;
+            margin-top: 1rem;
+            margin-right: 2rem;
+            font-size: 3.5rem;
+            cursor: pointer;
+            color: $color-black;
+            &:hover{
+                text-shadow: 0 1rem 2rem rgba($color-crimson-red, .8);
+            }
+        }
+
+        .menu{
+            position:absolute;
+            top:5rem;
+            width: 100%;
+            left:0;
+            background-color: $profile-color-grey-light-4;
+            transform: translateX(-100%);
+            transform: all .5s ease-out;
+        }
+
+        .menu ul{
+            display:block;
+        }
+
+        .menu ul li:hover ul{
+            display:none;
+        }
+
+        #btn-menu:checked ~ .menu {
+            transform: translateX(0%);
+        }
+
+        #btn-menu:checked ~ .icon-menu {
+            .bars{
+                display:none;
+            }
+            .times{
+                display:block;
+                margin-top: -5rem;
+            }
+        }
     }
 
 }// end of main menu .scss
