@@ -13,6 +13,12 @@
         animation: animate-front;
         animation-duration: 1s;
 
+        @include mediaQuery(phone6){
+            letter-spacing: 1.5rem;
+            font-size: 7rem;
+            padding-top: 1.2rem;
+        }
+
     }
 
     &--small{
@@ -22,6 +28,15 @@
         letter-spacing: 1rem;
         animation: animate-small 2s;
         animation-duration: 1s;
+        animation-delay: 2s;
+        text-align: center;
+
+        @include mediaQuery(phone6){
+            letter-spacing: 0.4rem;
+            font-size: 1.8rem;
+            padding-left: 1rem;
+        }
+        
     }
 
     &--sup{
@@ -32,5 +47,10 @@
         left:-6%;
         letter-spacing: 0rem;
         font-weight: 700;
+
+        @include mediaQuery(phone6){
+            font-weight: 400;
+        }
+
     }
 }
