@@ -1,0 +1,86 @@
+.col-md-3{
+    height: 60rem;
+    -moz-perspective: 150rem;
+    -webkit-perspective: 150rem;
+    perspective: 150rem;
+    margin-bottom: 2.5rem;
+}
+
+.advertisement{
+
+    &__side{
+        transition: all .8s ease-out;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black,.8);
+        height: 60rem;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    &__picture{
+        img{
+            height: 23rem;
+            width: 100%;
+            border-radius: 3px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        font-weight: 300;
+        color:$color-white;
+        width: 100%;
+
+        position: absolute;
+        top: 33%;
+        left: 0;
+        text-align: center;
+    }
+
+    &__heading-span{
+        padding: 0 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 7rem;
+
+        &--1{
+            background-image: linear-gradient(to right bottom, rgba($secondary-color-light, 0.85), rgba($secondary-color-dark, 0.85));
+        }
+    }
+
+    &-svgicons{
+        margin:0 auto;
+        width: 100%;
+        height: auto;
+        margin-right: 1rem;
+        margin-top: -0.5rem;
+        background-color: aquamarine;
+
+        span{
+            font-size: 1.6rem;
+            color: $color-black;
+
+        }
+
+        svg{
+            fill: $color-black;
+            height: 2rem;
+            width: 2rem;
+        }
+
+        svg:not(:last-child){
+            margin-right: 1rem;
+        }
+
+
+        svg:not(:first-child){
+            margin-right: 1rem;
+        }
+    }
+}
