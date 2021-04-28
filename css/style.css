@@ -125,6 +125,16 @@ body {
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
+  .advertisement__side--back {
+    transform: rotateY(180deg); }
+    .advertisement__side--back-1 {
+      background-image: linear-gradient(to right bottom, rgba(250, 216, 132, 0.85), rgba(245, 107, 38, 0.85)); }
+
+.advertisement:hover .advertisement__side--front {
+  transform: rotateY(-180deg); }
+
+.advertisement:hover .advertisement__side--back {
+  transform: rotateY(0deg); }
 
 .advertisement__picture img {
   height: 23rem;
@@ -151,6 +161,13 @@ body {
   .advertisement__heading-span--1 {
     background-image: linear-gradient(to right bottom, rgba(250, 216, 132, 0.85), rgba(245, 107, 38, 0.85)); }
 
+.advertisement__specific-details {
+  padding: 2rem;
+  width: 100%;
+  height: 5rem;
+  margin-top: 1rem;
+  text-align: center; }
+
 .advertisement-svgicons {
   margin: 0 auto;
   width: 100%;
@@ -169,6 +186,38 @@ body {
     margin-right: 1rem; }
   .advertisement-svgicons svg:not(:first-child) {
     margin-right: 1rem; }
+
+.advertisement-brief-desc {
+  position: absolute;
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  color: #000;
+  top: 50%; }
+
+.advertisement-type {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 100;
+  color: #333;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+  .advertisement-type span {
+    color: #fff;
+    padding-right: 0.6rem; }
+
+.advertisement__address {
+  position: absolute;
+  top: 93%;
+  left: 0;
+  width: 100%; }
+  .advertisement__address svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #8A265D; }
+  .advertisement__address span {
+    font-size: 1.1rem; }
 
 .section-main {
   background-color: #fff; }

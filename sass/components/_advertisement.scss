@@ -19,6 +19,25 @@
         width: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+
+        &--front{
+
+        }
+
+        &--back{
+            transform: rotateY(180deg);
+            &-1{
+                background-image: linear-gradient(to right bottom, rgba($secondary-color-light, .85), rgba($secondary-color-dark, .85));
+            }
+        }
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0deg);
     }
 
     &__picture{
@@ -54,6 +73,14 @@
         }
     }
 
+    &__specific-details{
+        padding: 2rem;
+        width: 100%;
+        height: 5rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
     &-svgicons{
         margin:0 auto;
         width: 100%;
@@ -81,6 +108,47 @@
 
         svg:not(:first-child){
             margin-right: 1rem;
+        }
+    }
+
+    &-brief-desc{
+        position:absolute;
+        margin-top: 3rem;
+        font-size: 1.7rem;
+        color: $color-black;
+        top: 50%;
+    }
+
+    &-type{
+        position: absolute;
+        top:90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        font-weight: 100;
+        color: $profile-color-grey-dark-1;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+        span{
+            color: $color-white;
+            padding-right: 0.6rem;
+
+        }
+    }
+    &__address{
+        position: absolute;
+        top: 93%;
+        left: 0;
+        width: 100%;
+
+        svg{
+            height: 2.5rem;
+            width: 2.5rem;
+            fill: $profile-color-primary-dark;
+        }
+
+        span{
+            font-size: 1.1rem;
         }
     }
 }
