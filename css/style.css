@@ -219,6 +219,31 @@ body {
   .advertisement__address span {
     font-size: 1.1rem; }
 
+.advertisement__company, .advertisement__individual {
+  width: 100%;
+  height: 11rem;
+  font-size: 1.5rem;
+  color: #fff; }
+  .advertisement__company--logo, .advertisement__individual--logo {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 1rem 4rem 4rem rgba(0, 0, 0, 0.4); }
+
+.advertisement__company-details {
+  position: absolute;
+  width: 65%;
+  height: 11rem;
+  top: 5%;
+  right: 0%;
+  padding: 2rem;
+  text-align: left; }
+
 .section-main {
   background-color: #fff; }
 
