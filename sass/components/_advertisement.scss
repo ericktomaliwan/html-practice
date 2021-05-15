@@ -55,7 +55,6 @@
         font-weight: 300;
         color:$color-white;
         width: 100%;
-
         position: absolute;
         top: 33%;
         left: 0;
@@ -77,7 +76,7 @@
         padding: 2rem;
         width: 100%;
         height: 5rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
         text-align: center;
     }
 
@@ -130,9 +129,9 @@
         text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 
         span{
-            color: $color-white;
+            color: $color-secondary-light;
             padding-right: 0.6rem;
-
+            font-weight: 700;
         }
     }
     &__address{
@@ -148,7 +147,7 @@
         }
 
         span{
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
     }
 
@@ -158,7 +157,6 @@
         height: 11rem;
         font-size: 1.5rem;
         color: $color-white;
-
         &--logo{
             position: absolute;
             top: 1%;
@@ -177,9 +175,64 @@
         position: absolute;
         width: 65%;
         height: 11rem;
-        top: 5%;
+        top: 3%;
         right: 0%;
         padding: 2rem;
         text-align: left;
+    }
+
+    &__details{
+        margin-top: 3rem;
+        padding: 1rem;
+        ul{
+            list-style: none;
+            width: 80%;
+            color: $color-white;
+            font-size: 1.7rem;
+
+            li{
+                text-align: center;
+                padding: 1rem 1.5rem;
+                &:not(:last-child){
+                    border-bottom: 1px solid red;
+                }
+            }
+        }
+    }
+
+    &__cta{
+        position: absolute;
+        top: 80%;
+        left: 0%;
+        width: 100%;
+        height: 7rem;
+    }
+
+    &__price-value{
+        font-size: 3rem;
+        float: left;
+        margin-left: 1rem;
+    }
+
+    .btn-text{
+        font-size: 2rem;
+        text-decoration: none;
+        float: right;
+        margin-top:1rem;
+    }
+
+    &__bottom-logo{
+        height: 5rem;
+        background-color: orange;
+        position: absolute;
+        bottom: 0%;
+
+        &-bgcolorharcourts{
+            background-color: yellow;
+        }
+
+        img{
+            width: 25%;
+        }
     }
 }
