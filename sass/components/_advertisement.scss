@@ -22,12 +22,16 @@
 
         &--front{
 
+
         }
 
         &--back{
             transform: rotateY(180deg);
             &-1{
                 background-image: linear-gradient(to right bottom, rgba($secondary-color-light, .85), rgba($secondary-color-dark, .85));
+            }
+            &-3{
+                background-image: linear-gradient(to right bottom, rgba($secondary-color-light, .85), rgba($profile-color-primary-dark, .85));
             }
         }
     }
@@ -61,6 +65,13 @@
         text-align: center;
     }
 
+    &__heading-jobs{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        text-align: left;
+    }
+
     &__heading-span{
         padding: 0 1rem;
         overflow: hidden;
@@ -69,6 +80,14 @@
 
         &--1{
             background-image: linear-gradient(to right bottom, rgba($secondary-color-light, 0.85), rgba($secondary-color-dark, 0.85));
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($secondary-color-light, .85), rgba($profile-color-primary-dark, .85));
+        }
+
+        &--4{
+            background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));
         }
     }
 
@@ -107,6 +126,29 @@
 
         svg:not(:first-child){
             margin-right: 1rem;
+        }
+
+        &--caricons{
+            margin-right: 1rem;
+            
+            .icon_middle{
+                float:left;
+                margin-left: 1.5rem;
+                span{
+                    margin-top: 0px;
+                    text-align: center;
+                }
+            }
+
+            span{
+                margin-top: -0.7rem;
+                text-align: center;
+                display:block;
+            }
+
+            &:not(:last-child){
+                margin-right: 1.5rem;
+            }
         }
     }
 
