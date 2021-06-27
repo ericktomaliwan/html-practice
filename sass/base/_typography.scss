@@ -54,3 +54,17 @@
 
     }
 }
+
+.secondary-heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, $color-tertiary-very-light, $color-tertiary-very-dark);
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    letter-spacing: 1rem;
+}

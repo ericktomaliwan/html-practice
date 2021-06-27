@@ -107,6 +107,19 @@ body {
       .primary-heading--sup {
         font-weight: 400; } }
 
+.secondary-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to top, #89c2f7, #00213f);
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1rem; }
+
 .col-md-3 {
   height: 60rem;
   -moz-perspective: 150rem;
@@ -129,6 +142,8 @@ body {
     transform: rotateY(180deg); }
     .advertisement__side--back-1 {
       background-image: linear-gradient(to right bottom, rgba(250, 216, 132, 0.85), rgba(245, 107, 38, 0.85)); }
+    .advertisement__side--back-2 {
+      background-image: linear-gradient(to right bottom, rgba(137, 194, 247, 0.85), rgba(0, 33, 63, 0.85)); }
     .advertisement__side--back-3 {
       background-image: linear-gradient(to right bottom, rgba(250, 216, 132, 0.85), rgba(138, 38, 93, 0.85)); }
 
@@ -159,15 +174,20 @@ body {
   position: absolute;
   top: 0%;
   left: 0%;
-  text-align: left; }
+  text-align: left;
+  width: 100%; }
 
 .advertisement__heading-span {
   padding: 0 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 7rem; }
+  height: 7rem;
+  display: flex;
+  max-height: 7rem; }
   .advertisement__heading-span--1 {
     background-image: linear-gradient(to right bottom, rgba(250, 216, 132, 0.85), rgba(245, 107, 38, 0.85)); }
+  .advertisement__heading-span--2 {
+    background-image: linear-gradient(to right bottom, rgba(137, 194, 247, 0.85), rgba(0, 33, 63, 0.85)); }
   .advertisement__heading-span--3 {
     background-image: linear-gradient(to right bottom, rgba(250, 216, 132, 0.85), rgba(138, 38, 93, 0.85)); }
   .advertisement__heading-span--4 {
@@ -220,8 +240,18 @@ body {
   color: #000;
   top: 50%; }
 
+.advertisement-brief-desc-jobs {
+  height: 17rem;
+  overflow: hidden;
+  position: absolute;
+  top: 35%;
+  left: 1.5%;
+  padding: 0.5rem 1rem; }
+
 .advertisement-type {
   position: absolute;
+  width: 100%;
+  text-align: center;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -233,6 +263,32 @@ body {
     color: #fad884;
     padding-right: 0.6rem;
     font-weight: 700; }
+  .advertisement-type--jobtype {
+    font-size: 2.5rem; }
+
+.advertisement__salary {
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  font-size: 2rem;
+  text-align: center; }
+
+.advertisement__company-reviews {
+  float: left;
+  font-size: 1.6rem;
+  color: #000; }
+
+.advertisement__days_posted {
+  font-size: 1.2rem;
+  color: #231f20;
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 1rem; }
+
+.advertisement__apply-link {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%; }
 
 .advertisement__address {
   position: absolute;
@@ -245,6 +301,24 @@ body {
     fill: #8A265D; }
   .advertisement__address span {
     font-size: 1.3rem; }
+
+.advertisement__hiring-company-name {
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  text-decoration: underline; }
+
+.advertisement__hiring-jobclassification {
+  color: #000;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 15%;
+  left: 5%; }
+  .advertisement__hiring-jobclassification .place {
+    font-size: 1.3rem;
+    font-weight: bold; }
 
 .advertisement__company, .advertisement__individual {
   width: 100%;
@@ -317,11 +391,19 @@ body {
   background-color: #fff; }
 
 .container-fluid {
-  margin-right: 1rem !important;
-  margin-left: 1rem !important; }
+  margin-right: 0rem !important;
+  margin-left: 0rem !important; }
   @media (max-width: 37.5em) {
     .container-fluid {
       margin-left: 0rem !important;
+      margin-right: 0rem !important; } }
+
+.row [class^="col-"] {
+  margin-right: 0rem !important; }
+  .row [class^="col-"]:last-child {
+    margin-right: 0rem !important; }
+  @media (max-width: 37.5em) {
+    .row [class^="col-"] {
       margin-right: 0rem !important; } }
 
 .main-menu {
