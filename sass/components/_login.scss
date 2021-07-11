@@ -1,9 +1,9 @@
-.section-register{
+.section-login{
     position: relative;
     height: 100vh;
     color: $color-white;
     font-family: $roboto-font;
-    .register{        box-shadow: 0rem 1rem 2rem rgba($color-black, 0.4);
+    .login{        box-shadow: 0rem 1rem 2rem rgba($color-black, 0.4);
 
         @include mediaQuery(phone6){
             font-size: 6rem;
@@ -40,7 +40,6 @@
                     }
                 }
                 box-shadow: 0rem 1rem 2rem rgba($color-black, .4);
-
                 
             }
 
@@ -48,7 +47,7 @@
             background-color: green;
             width: 43rem;
             border-radius: 15px;
-            background-image: linear-gradient(to bottom, $profile-color-darkviolet, $color-harcourts);
+            background-image: linear-gradient(to top, $watsup, $color-green-dark);
 
             &__group:not(:last-child){
                 margin-bottom: 2rem;
@@ -72,7 +71,7 @@
                 color: inherit;
 
                 &:focus{
-                    border-bottom: 3px solid $watsup;
+                    border-bottom: 3px solid $profile-color-orchid;
                 }
 
                 &:focus:invalid{
@@ -108,7 +107,7 @@
 
         }
     }
-    .register::before{
+    .login::before{
         background-image: url('../../img/moomin.jpg');
         background-position: top;
         background-size: cover;
