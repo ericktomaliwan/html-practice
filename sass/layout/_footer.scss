@@ -1,0 +1,42 @@
+.footer{
+    background-color: $color-tertiary-very-dark;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%, 0% 38%);
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%, 0% 38%);
+
+    .row[class^="col-"]{
+        margin-right: 0rem !important;
+    }
+
+    font-size: 1.6rem;
+    color: $color-white;
+    
+    &__logo{
+        width: 8rem;
+        margin-top: 2rem;
+        height: auto;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+
+    &__logob{
+        margin-top: 3rem;
+        width: 100%;
+        background-color: green;
+        height: 7rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        background-image: linear-gradient(
+            to right, 
+            $color-tertiary-very-dark,
+            $color-tertiary-very-light,
+            $color-tertiary-very-dark
+        );
+    }
+
+    &__elements{
+        list-style: none;
+    }
+
+
+}
