@@ -5,6 +5,22 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin a-links($link, $visit, $hover, $active){
+    a {
+        color:$link;
+        &:visited{
+            color:$visit;
+        }
+        &:hover{
+            color:$hover;
+            text-decoration: none;
+        }
+        &:active{
+            color:$active;
+        }
+    }
+}
+
 /*
 Small mobile Device 0 - 500px
 Mobile Device 0 - 600px
