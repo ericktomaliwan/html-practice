@@ -1,0 +1,27 @@
+.scroll{
+    #scrollToTopButton{
+        z-index: 1;
+        position: fixed;
+        bottom: 4rem;
+        right: 4rem;
+        height: 6rem;
+        width: 6rem;
+        font-size: 2rem;
+        cursor: pointer;
+        border-radius: 50%;
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #scrollToTopButton.show{
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+    }
+
+    &__arrowup{
+        color: $color-crimson-red;
+    }
+}
